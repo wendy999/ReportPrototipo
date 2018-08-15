@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Grades">
+
+        <item>Decimo</item>
+        <item>Once</item>
+        <item>Noveno</item>
+        <item>Octavo</item>
+        <item>Septimo</item>
+
+    </string-array>
+
+</resources>
