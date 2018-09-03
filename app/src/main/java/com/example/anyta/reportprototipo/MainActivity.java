@@ -16,7 +16,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.anyta.reportprototipo.fragment.HomeFragment;
 import com.example.anyta.reportprototipo.fragment.ListUserFragment;
+import com.example.anyta.reportprototipo.views.ProfileActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,ListUserFragment.OnFragmentInteractionListener {
@@ -89,7 +91,10 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_profile) {
             Intent h = new Intent(MainActivity.this, ProfileActivity.class);
             startActivity(h);
-        } else if (id == R.id.nav_home) {
+        } else if (id == R.id.nav_home)
+        {
+            FragmentTransaction miFragmentHome = getSupportFragmentManager().beginTransaction();
+            miFragmentHome.replace(R.id.contenedorFragment,new HomeFragment()).commit();
 
         } else if (id == R.id.nav_us) {
 
